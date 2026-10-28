@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const forecastDiv = document.getElementById('forecast');
 
   // Load CSV
-  fetch('city_coordinates.csv')
+  fetch('../data/city_coordinates.csv')
     .then(response => response.text())
     .then(data => {
       const lines = data.trim().split('\n').slice(1); // skip header
